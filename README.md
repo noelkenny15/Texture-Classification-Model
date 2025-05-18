@@ -22,6 +22,7 @@ This project uses **ResNeXt-101**, a powerful deep convolutional neural network 
 1. **Clone the repository**
    
 git clone https://github.com/noelkenny15/Texture-Classification-Model.git
+
 cd Texture-Classification-Model
 
 2. **Install Required Packages**
