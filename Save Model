@@ -1,0 +1,14 @@
+import torch
+import timm
+import torch.nn as nn
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+
+model = timm.create_model('resnext101_32x8d', pretrained=False)
+model.fc = nn.Linear(model.get_classifier().in_features, 47)
+model = model.to(device)
+
+
+model.load_state_dict(torch.load('/content/drive/MyDrive/resnext101.pth', map_location=device))
+model.eval()
