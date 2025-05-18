@@ -19,6 +19,8 @@ This project uses **ResNeXt-101**, a powerful deep convolutional neural network 
 
 ## 🛠️ Installation
 
+BASH
+
 1. **Clone the repository**
    
 git clone https://github.com/noelkenny15/Texture-Classification-Model.git
